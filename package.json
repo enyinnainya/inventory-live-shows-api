@@ -1,0 +1,42 @@
+{
+   "name": "Inventory & Live Shows API",
+   "version": "1.0.0",
+   "description": "REST API for managing inventory and show sales",
+   "main": "server.js",
+   "type": "commonjs",
+   "scripts": {
+      "start": "node src/server.js",
+      "test": "jest --config ./tests/config/jest.config.js",
+      "format:check": "prettier --check .",
+      "format:write": "prettier --write .",
+      "lint:check": "eslint .",
+      "lint:fix": "eslint --fix ."
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/enyinnainya/inventory-live-shows-api.git"
+   },
+   "author": "Enyinna Inya",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/enyinnainya/inventory-live-shows-api/issues"
+   },
+   "homepage": "https://github.com/enyinnainya/inventory-live-shows-api#readme",
+   "dependencies": {
+      "body-parser": "^1.20.0",
+      "cors": "^2.8.5",
+      "express": "^4.18.1",
+      "joi": "^17.6.0",
+      "jsonwebtoken": "^8.5.1",
+      "mongodb": "^4.7.0"
+   },
+   "devDependencies": {
+      "env-cmd": "^10.1.0",
+      "eslint": "^8.17.0",
+      "eslint-config-prettier": "^8.5.0",
+      "jest": "^28.1.1",
+      "nodemon": "^2.0.16",
+      "prettier": "^2.6.2",
+      "supertest": "^6.2.3"
+   }
+}
